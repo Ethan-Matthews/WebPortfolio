@@ -1,0 +1,418 @@
+@import 'config';
+@import 'menu';
+
+html {
+    background-image: radial-gradient(farthest-side at 0% 0%, $primary-color 90%, darken($secondary-color, 30) 150%);
+    overflow: hidden;
+    height: 100%;
+}
+body {
+    margin: 0;
+    @include background;
+    color: set-text-colour($primary-color);
+    overflow: hidden;
+    height: 100%;
+    font-family: $font;
+    line-height: 1.5;
+}
+
+// headings
+h1,h2,h3 {
+    margin: 0;
+    font-weight: 400;
+
+    &.lg-heading {
+        font-size: 6rem;
+    }
+
+    &.sm-heading {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+        padding: 0.2rem 1rem;
+        background: rgba(lighten($primary-color, 10), 0.5);
+    }
+}
+
+h6 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+}
+
+main {
+    max-width: 1920px;
+    margin: auto;
+    // rem - multiplies by factors of html text size (16 bit default).
+    padding: 5rem 5rem 2rem 5rem;
+    min-height: calc(100vh - 60px);
+
+    .icons {
+        margin-top: 1rem;
+        
+        a {
+            padding: 0.4rem;
+
+            &:hover {
+                color: $secondary-color;
+                // Calls fuction.
+                @include easeOut();
+            }
+        }
+    }
+
+    &#home {
+        // never have scroll bars on home page.
+        overflow: hidden;
+        h1 {
+            // vh - 100th of the webpage width/hight (same as percent???).
+            margin-top: 20vh;
+        }
+    }
+}
+
+.menu-nav {
+    margin: 0;
+}
+
+.large-header {
+	font-family: $font;
+	position: absolute;
+	width: 100%;
+	background: #333;
+	overflow: hidden;
+	height: 100%;
+	background-size: cover;
+	background-position: center center;
+	z-index: 1;
+}
+
+.main .large-header {
+	background-image: $home-image;
+}
+
+.main-title {
+    font-size: 4.2em;
+    text-transform: uppercase;
+	letter-spacing: 0.2em;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+}
+
+.thin {
+	font-weight: 200;
+}
+
+
+
+.text-secondary {
+    color: $secondary-color;
+}
+
+// About Page.
+#body-about {
+    overflow-y: visible;
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+    -ms-animation: fadein 2s; /* Internet Explorer */
+    -o-animation: fadein 2s; /* Opera < 12.1 */
+    animation: fadein 2s;
+}
+
+.about-info {
+    display: grid;
+    gap: 50px;
+    grid-template-areas: 
+    'bioimage bio bio'
+    'job1 job2 job3';
+    grid-template-columns: repeat(3, 1fr);
+
+    .bio-image {
+        grid-area: bioimage;
+        margin: auto;
+        border-radius: 50%;
+        border: $secondary-color 3px solid;
+    }
+    
+    .bio {
+        grid-area: bio;
+        font-size: 2.0rem;
+
+        p {
+            font-family: $font2;
+        }
+    }
+
+    .job {
+        font-size: 1.5rem;
+        letter-spacing: 0.05em;
+        background: lighten($color: $primary-color, $amount: 5);
+        padding: 2rem;
+        border-bottom: $secondary-color 5px solid;
+
+        h3 {
+            font-size: 2.0rem;
+        }
+
+        h6 {
+            font-size: 1.5rem;
+            color: $secondary-color;
+        }
+
+        li {
+            font-family: $font2;
+            padding: 0.5rem;
+        }
+
+        p {
+            font-family: $font2;
+        }
+    }
+    
+    .job-1 {
+        grid-area: job1;
+    }
+    
+    .job-2 {
+        grid-area: job2;
+    }
+    
+    .job-3 {
+        grid-area: job3;
+    }
+}
+
+// Skills Page
+#body-skills {
+    overflow-y: visible;
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+    -ms-animation: fadein 2s; /* Internet Explorer */
+    -o-animation: fadein 2s; /* Opera < 12.1 */
+    animation: fadein 2s;
+}
+
+.language-header {
+    margin-top: 5rem;
+    margin-left: 1rem;
+    font-size: 2.5rem;
+}
+
+.languages {
+    margin-top: 5rem;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    gap: 5rem;
+
+    .items {
+        max-width: 10vw;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    h1 {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+// Project Page
+#body-projects {
+    overflow-y: visible;
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+    -ms-animation: fadein 2s; /* Internet Explorer */
+    -o-animation: fadein 2s; /* Opera < 12.1 */
+    animation: fadein 2s;
+}
+
+.projects {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+
+    img {
+        width: 100%;
+
+        &:hover {
+            opacity: 0.5;
+            border-color: $secondary-color;
+            @include easeOut;
+        }
+    }
+}
+
+// Dropdown Content (Hidden by Default)
+.dropdown-content {
+    grid-column: 1 / span 5;
+    display: flex;
+    margin-top: 1rem;
+    padding-top: 4rem;
+    height: 0;
+    width: 100%;
+    display: none;
+    position: relative;
+    background-color: $primary-color;
+    
+    &.show {
+        animation: fadein 1s;
+        height: auto;
+        display:block;
+        opacity: 1;
+    }
+
+    &.close {
+        animation: fadeout 1s;
+        opacity: 0;
+    }
+
+    h1 {
+        margin-right: 2rem;
+        margin-left: 2rem;
+        border-bottom: 3px solid $secondary-color;
+        font-size: 4rem;
+    }
+
+    p {
+        margin-right: 2rem;
+        margin-left: 2rem;
+        font-family: $font2;
+        font-size: 1.5rem;
+    }
+
+    .img-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        img {
+            @include easeOut;
+            display: inline-block;
+            padding: 3rem;
+            max-width: 20rem;
+            &:hover {
+                pointer-events: none;
+            }
+        }
+    }
+
+    
+}
+
+// Contact Page
+#body-contact {
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+    -ms-animation: fadein 2s; /* Internet Explorer */
+    -o-animation: fadein 2s; /* Opera < 12.1 */
+    animation: fadein 2s;
+}
+
+.boxes {
+    display: block;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1rem;
+
+    div {
+        font-size: 1.5rem;
+        padding: 0.5rem 1.5rem;
+        margin-bottom: 3rem;
+        @include easeOut;
+
+        &:hover {
+            padding: 1.5rem;
+            font-size: 2rem;
+            background: rgba(lighten($primary-color, 10), 0.5);
+        }
+    }
+}
+
+// Button Styles
+.btn {
+    @include easeOut;
+    font-family: $font;
+    display: block;
+    padding: 0.5rem 1rem;
+    border: 0;
+    margin-bottom: 0.3rem;
+    font-size: 1.5rem;
+    border-radius: 0;
+    cursor: pointer;
+    text-align: left;
+    width: 100%;
+
+    h2 {
+        display: inline;
+    }
+}
+
+.btn-dark {
+    @extend .btn;
+    background: darken($primary-color, 50);
+    color:white;
+
+    &:hover {
+        background: rgba(lighten($primary-color, 10), 0.5);
+        color: $secondary-color;
+    }
+
+    &:focus {
+        background: rgba(lighten($primary-color, 10), 0.5);
+        outline: none;
+        box-shadow: 0 0 10px $secondary-color;
+    }
+}
+
+.btn-light {
+    @extend .btn;
+    background: lighten($primary-color, 50);
+    color:rgb(0, 0, 0);
+
+    &:hover {
+        background: rgba(lighten($primary-color, 10), 0.5);
+        color: $secondary-color;
+    }
+
+    &:focus {
+        color: $secondary-color;
+        background: rgba(lighten($primary-color, 10), 0.5);
+        outline: none; // clears default browser outline
+        box-shadow: 0 0 10px $secondary-color;
+    }
+}
+
+#main-footer {
+    bottom: 0;
+    font-size: 1.5rem;
+    letter-spacing: 0.5rem;
+    position: sticky;
+    text-align: center;
+    padding: 0.9rem;
+    margin: -1rem;
+    background: darken($color: $primary-color, $amount: 10);
+    color: set-text-colour($primary-color);
+    height: 31px;
+}
+
+@import 'mobile';

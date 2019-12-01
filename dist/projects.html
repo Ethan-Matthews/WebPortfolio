@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/e3a8dced70.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <title>Projects</title>
+</head>
+<body id="body-projects">
+    <header>
+        <div class="menu-btn">
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+        </div>
+        <div class="menu">
+            <ul class="menu-nav">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">
+                        About Me
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="skills.html" class="nav-link">
+                        Skills
+                    </a>
+                </li>
+                <li class="nav-item current">
+                    <a href="projects.html" class="nav-link">
+                        Projects
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">
+                        Contact Me
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main id="work">
+        <h1 class="lg-heading">
+            <span class="text-secondary">
+                My
+            </span>
+            Projects
+        </h1>
+        <h2 class="sm-heading">
+            Check out some of my projects...
+        </h2>
+        <div class="projects">
+            <div class="items">
+                <a href="https://github.com/Ethan-Matthews/Quizlet-App">
+                    <img src="icons/Android-Logo.svg" alt="Project">
+                </a>
+                <button onclick="window.location.href = 'https:/\/github.com/Ethan-Matthews/Quizlet-App';" class="btn-dark">
+                    <i class="fab fa-github"></i>    Github
+                </button>
+                <button onclick="ddBtn('dropdown1')" class="btn-light" id="project1">
+                     ⧩    Project
+                </button>
+            </div>
+            <div class="items">
+                <a href="#!">
+                    <img src="icons/file_type_cpp3.svg" alt="Project">
+                </a>
+                <button onclick="" class="btn-dark">
+                    <i class="fab fa-github"></i>    Github
+                </button>
+                <button onclick="ddBtn('dropdown2')" class="btn-light" id="project2">
+                     ⧩    Project
+                </button>
+            </div>
+            
+            <div class="items">
+                <a href="#!">
+                    <img src="icons/file_type_python.svg" alt="Project">
+                </a>
+                <button onclick="" class="btn-dark">
+                    <i class="fab fa-github"></i>    Github
+                </button>
+                <button onclick="ddBtn('dropdown3')" class="btn-light" id="project2">
+                     ⧩    Project
+                </button>
+            </div>
+            
+            <div class="items">
+                <a href="#!">
+                    <img src="icons/file_type_java.svg" alt="Project">
+                </a>
+                <button onclick="" class="btn-dark">
+                    <i class="fab fa-github"></i>    Github
+                </button>
+                <button onclick="ddBtn('dropdown4')" class="btn-light" id="project2">
+                     ⧩    Project
+                </button>
+            </div>
+            
+            <div class="items">
+                <a href="#!">
+                    <img src="icons/file_type_sql.svg" alt="Project">
+                </a>
+                <button onclick="" class="btn-dark">
+                    <i class="fab fa-github"></i>    Github
+                </button>
+                <button onclick="ddBtn('dropdown5')" class="btn-light" id="project2">
+                     ⧩    Project
+                </button>
+            </div>
+            <div id="dropdown1" class="dropdown-content">
+                <h1>Android Development - Quizlet App</h1>
+                <p>
+                    The Quizlet Application.  One of my first Android Projects.  A simple yet effective app. 
+                </p>
+                <div class="img-container">
+                    <img src="img/and-app-home.svg">
+                    <img src="img/and-app-question.svg">
+                    <img src="img/and-app-question-right.svg">
+                    <img src="img/and-app-question-complete.svg">
+                </div>
+                <p>Objective: </p>
+                <p>
+                    Write a two screen Android application in portrait mode that allows a user to prepare for ‘matching-style’ quizzes. When the program is running, it will display one term and four possible definitions; one of which is the correct one. The user will then select which definition they think matches the term displayed. The program will indicate if the user has made a correct or incorrect selection by displaying a toast message.
+                </p>
+                <p>
+                    Brief Description:
+                </p>
+                <p>
+                    I Enjoyed this assignment.  It through me into the world of Android - which was great for an introduction.  The app uses a HashMap to pair keys and values (answers and questions) for answer validation read in from a file.  This was the first time I've had to implement a HashMap.  So not only was it an introduction to Android Development, I also learned new Java technologies too.
+                </p>
+                <p>
+                    The challenge part of this assignment I found to be populating the buttons with answers.  First the correct answer had to be inserted into a random button.  Then the others had to be populated with false answers, without over-writing the correct answer.  At the end of it all I wound up with a single method that compared text values of the buttons against the HashMap pairs, and if the buttons had been populated in the first place.  
+                </p>
+                <p>
+                    You can find the code on Git Hub using the link above.
+                </p>
+            </div>
+            <div id="dropdown2" class="dropdown-content">
+                <h1>Project 2 - Too Awesome</h1>
+                <p>Enim magna parturient ac elementum, tincidunt tempor ac lectus platea placerat. Eros dis lectus. Ut aliquam. Porttitor risus mattis mauris lacus a, aliquam augue cras elementum! Adipiscing, vel ridiculus diam pellentesque sociis habitasse pellentesque, augue parturient sed elementum aenean. Tincidunt tristique.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, modi reprehenderit. Nisi ea adipisci ex, iusto itaque possimus blanditiis numquam magnam, iure nam voluptatem vel quas odit dolor quos corporis quidem, fugiat sit ipsam commodi at minima. Corrupti molestiae, autem facilis, quis amet veritatis odit vero optio praesentium maiores quos laborum velit dolores et eum modi minima aliquam possimus reiciendis in eos maxime eaque! Eos quis iste necessitatibus iure eligendi eaque nulla, assumenda, aspernatur hic ut adipisci quisquam veritatis dicta fugiat autem dolore dignissimos? Omnis cupiditate rem aperiam voluptates pariatur non laborum repudiandae enim! Id blanditiis ipsa vero similique iste!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ducimus dolor soluta maiores fugiat sequi iusto vitae veritatis ut aperiam, eos sint? Reprehenderit excepturi eveniet nulla nostrum unde magni maxime cupiditate reiciendis beatae atque. Delectus nobis ipsa perspiciatis dignissimos vero rem, sequi facilis vitae ipsam autem et asperiores perferendis itaque, debitis laborum velit explicabo veniam, quibusdam tenetur id natus? Placeat.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, nobis praesentium cumque molestiae fugit eum sunt, odit vel enim possimus quibusdam id minus suscipit voluptatum quam! Nemo eveniet labore iste eum sequi excepturi hic, vel enim fugit architecto officia fugiat nihil aperiam. Totam labore, delectus in quas neque error omnis reiciendis exercitationem laboriosam perspiciatis quia eaque expedita inventore fuga assumenda suscipit asperiores quisquam aliquid, magnam vitae! Quisquam, natus vero fugiat deserunt quibusdam expedita, impedit quas laboriosam quidem voluptatum blanditiis sunt minima et? Commodi officia voluptatem molestiae culpa sunt consequatur laboriosam illum ipsum quis sit voluptates velit neque vel, similique quo.
+                </p>
+            </div>
+            <div id="dropdown3" class="dropdown-content">
+                <h1>Project 3 - Awesome Possum</h1>
+                <p>Enim magna parturient ac elementum, tincidunt tempor ac lectus platea placerat. Eros dis lectus. Ut aliquam. Porttitor risus mattis mauris lacus a, aliquam augue cras elementum! Adipiscing, vel ridiculus diam pellentesque sociis habitasse pellentesque, augue parturient sed elementum aenean. Tincidunt tristique.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum neque voluptate consequatur, sequi, dolorem et quo cum in cumque, iste velit dolorum enim vero corporis quas.
+                </p>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem illo, autem corrupti alias, dolores ipsum quibusdam doloremque voluptatum magni iusto ratione ullam, quam saepe maiores rerum et optio perspiciatis. Reprehenderit quisquam amet ad molestias laborum iure adipisci nemo, esse iusto perspiciatis error nostrum temporibus fugiat voluptates sint quos magnam vitae repellendus, modi voluptate ex. Ipsa animi possimus reprehenderit dolores eos, ex rem ipsam asperiores! Officiis vero rem reprehenderit praesentium perspiciatis reiciendis eum, impedit dicta odio labore, totam at consequatur vel harum quia rerum dolor minima dolorem veritatis quibusdam deserunt saepe! Repellendus in ut doloremque commodi. Itaque eveniet laboriosam in amet ratione dolores! Dolor, doloribus fugiat explicabo dolorum repellendus quas iure accusantium tempore eos in dignissimos nesciunt facere fuga corrupti, cumque mollitia aperiam odio quisquam consequuntur! Ea id laboriosam nemo quidem perferendis dolorem modi delectus architecto quisquam magni est voluptatibus voluptate, facere a numquam voluptatum? Dignissimos qui labore a iusto autem?
+                </p>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita distinctio nostrum voluptatibus! Earum amet eveniet, a perferendis exercitationem neque quia? Aut, ratione incidunt quod corrupti quasi reiciendis in illo! Vel laudantium quos in cum quisquam sunt? Illo distinctio quam nostrum sint officiis libero neque ratione modi ducimus, nobis provident autem.
+                </p>
+            </div>
+            <div id="dropdown4" class="dropdown-content">
+                <h1>Project 4 - Awesome Sauce</h1>
+                <p>Enim magna parturient ac elementum, tincidunt tempor ac lectus platea placerat. Eros dis lectus. Ut aliquam. Porttitor risus mattis mauris lacus a, aliquam augue cras elementum! Adipiscing, vel ridiculus diam pellentesque sociis habitasse pellentesque, augue parturient sed elementum aenean. Tincidunt tristique.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque fugiat esse debitis, perspiciatis enim quisquam obcaecati quo dignissimos doloribus illo eveniet architecto molestias rerum non consequuntur provident praesentium ad similique itaque eius tempore unde reiciendis? Corrupti architecto quia, deleniti dolor itaque eos accusantium! Facilis, eaque sed expedita ad perferendis fuga rem sequi minus voluptas molestiae!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, nobis praesentium cumque molestiae fugit eum sunt, odit vel enim possimus quibusdam id minus suscipit voluptatum quam! Nemo eveniet labore iste eum sequi excepturi hic, vel enim fugit architecto officia fugiat nihil aperiam. Totam labore, delectus in quas neque error omnis reiciendis exercitationem laboriosam perspiciatis quia eaque expedita inventore fuga assumenda suscipit asperiores quisquam aliquid, magnam vitae! Quisquam, natus vero fugiat deserunt quibusdam expedita, impedit quas laboriosam quidem voluptatum blanditiis sunt minima et? Commodi officia voluptatem molestiae culpa sunt consequatur laboriosam illum ipsum quis sit voluptates velit neque vel, similique quo.
+                </p>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem illo, autem corrupti alias, dolores ipsum quibusdam doloremque voluptatum magni iusto ratione ullam, quam saepe maiores rerum et optio perspiciatis. Reprehenderit quisquam amet ad molestias laborum iure adipisci nemo, esse iusto perspiciatis error nostrum temporibus fugiat voluptates sint quos magnam vitae repellendus, modi voluptate ex. Ipsa animi possimus reprehenderit dolores eos, ex rem ipsam asperiores! Officiis vero rem reprehenderit praesentium perspiciatis reiciendis eum, impedit dicta odio labore, totam at consequatur vel harum quia rerum dolor minima dolorem veritatis quibusdam deserunt saepe! Repellendus in ut doloremque commodi. Itaque eveniet laboriosam in amet ratione dolores! Dolor, doloribus fugiat explicabo dolorum repellendus quas iure accusantium tempore eos in dignissimos nesciunt facere fuga corrupti, cumque mollitia aperiam odio quisquam consequuntur! Ea id laboriosam nemo quidem perferendis dolorem modi delectus architecto quisquam magni est voluptatibus voluptate, facere a numquam voluptatum? Dignissimos qui labore a iusto autem?
+                </p>
+            </div>
+            <div id="dropdown5" class="dropdown-content">
+                <h1>Project 5 - The Final Awesome</h1>
+                <p>Enim magna parturient ac elementum, tincidunt tempor ac lectus platea placerat. Eros dis lectus. Ut aliquam. Porttitor risus mattis mauris lacus a, aliquam augue cras elementum! Adipiscing, vel ridiculus diam pellentesque sociis habitasse pellentesque, augue parturient sed elementum aenean. Tincidunt tristique.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, autem.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ducimus dolor soluta maiores fugiat sequi iusto vitae veritatis ut aperiam, eos sint? Reprehenderit excepturi eveniet nulla nostrum unde magni maxime cupiditate reiciendis beatae atque. Delectus nobis ipsa perspiciatis dignissimos vero rem, sequi facilis vitae ipsam autem et asperiores perferendis itaque, debitis laborum velit explicabo veniam, quibusdam tenetur id natus? Placeat.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, nobis praesentium cumque molestiae fugit eum sunt, odit vel enim possimus quibusdam id minus suscipit voluptatum quam! Nemo eveniet labore iste eum sequi excepturi hic, vel enim fugit architecto officia fugiat nihil aperiam. Totam labore, delectus in quas neque error omnis reiciendis exercitationem laboriosam perspiciatis quia eaque expedita inventore fuga assumenda suscipit asperiores quisquam aliquid, magnam vitae! Quisquam, natus vero fugiat deserunt quibusdam expedita, impedit quas laboriosam quidem voluptatum blanditiis sunt minima et? Commodi officia voluptatem molestiae culpa sunt consequatur laboriosam illum ipsum quis sit voluptates velit neque vel, similique quo.
+                </p>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem illo, autem corrupti alias, dolores ipsum quibusdam doloremque voluptatum magni iusto ratione ullam, quam saepe maiores rerum et optio perspiciatis. Reprehenderit quisquam amet ad molestias laborum iure adipisci nemo, esse iusto perspiciatis error nostrum temporibus fugiat voluptates sint quos magnam vitae repellendus, modi voluptate ex. Ipsa animi possimus reprehenderit dolores eos, ex rem ipsam asperiores! Officiis vero rem reprehenderit praesentium perspiciatis reiciendis eum, impedit dicta odio labore, totam at consequatur vel harum quia rerum dolor minima dolorem veritatis quibusdam deserunt saepe! Repellendus in ut doloremque commodi. Itaque eveniet laboriosam in amet ratione dolores! Dolor, doloribus fugiat explicabo dolorum repellendus quas iure accusantium tempore eos in dignissimos nesciunt facere fuga corrupti, cumque mollitia aperiam odio quisquam consequuntur! Ea id laboriosam nemo quidem perferendis dolorem modi delectus architecto quisquam magni est voluptatibus voluptate, facere a numquam voluptatum? Dignissimos qui labore a iusto autem?
+                </p>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita distinctio nostrum voluptatibus! Earum amet eveniet, a perferendis exercitationem neque quia? Aut, ratione incidunt quod corrupti quasi reiciendis in illo! Vel laudantium quos in cum quisquam sunt? Illo distinctio quam nostrum sint officiis libero neque ratione modi ducimus, nobis provident autem.
+                </p>
+            </div>
+        </div>
+    </main>
+    <footer id="main-footer">
+            Portfolio    |    Ethan Matthews    |    2019
+    </footer>
+
+<script src="js/menu.js"></script>
+</body>
+</html>
