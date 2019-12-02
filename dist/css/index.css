@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Exo+2&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Expanded&display=swap");
 @keyframes fadein {
   animation-delay {
     delay: 1.1s; }
@@ -118,7 +118,9 @@
   transition-delay: 0.6s; }
 
 html {
-  background-image: radial-gradient(farthest-side at 50% 0%, black 90%, #12ad86 500%);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/dark-background.svg");
+  background-size: cover;
+  background-position: bottom;
   overflow: hidden;
   height: 100%; }
 
@@ -128,7 +130,16 @@ body {
   overflow: hidden;
   height: 100%;
   font-family: "Odibee Sans";
-  line-height: 1.5; }
+  line-height: 1.5;
+  -webkit-animation: fadein 2s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 2s;
+  /* Internet Explorer */
+  -o-animation: fadein 2s;
+  /* Opera < 12.1 */
+  animation: fadein 2s; }
   body#bg-img {
     background: url("../img/background.svg");
     background-attachment: fixed;
@@ -219,33 +230,13 @@ main {
   transform: translate3d(-50%, -50%, 0); }
 
 .thin {
-  font-size: 4.5rem; }
+  font-weight: bold; }
 
 .text-secondary {
   color: #17dbaa; }
 
-#body-index {
-  -webkit-animation: fadein 2s;
-  /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 2s;
-  /* Firefox < 16 */
-  -ms-animation: fadein 2s;
-  /* Internet Explorer */
-  -o-animation: fadein 2s;
-  /* Opera < 12.1 */
-  animation: fadein 2s; }
-
 #body-about {
-  overflow-y: visible;
-  -webkit-animation: fadein 2s;
-  /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 2s;
-  /* Firefox < 16 */
-  -ms-animation: fadein 2s;
-  /* Internet Explorer */
-  -o-animation: fadein 2s;
-  /* Opera < 12.1 */
-  animation: fadein 2s; }
+  overflow-y: visible; }
 
 .about-info {
   display: grid;
@@ -259,9 +250,9 @@ main {
     border: #17dbaa 3px solid; }
   .about-info .bio {
     grid-area: bio;
-    font-size: 2.0rem; }
+    font-size: 1.8rem; }
     .about-info .bio p {
-      font-family: "Exo 2"; }
+      font-family: "Encode Sans Semi Expanded", sans-serif; }
   .about-info .job {
     font-size: 1.5rem;
     letter-spacing: 0.05em;
@@ -274,10 +265,10 @@ main {
       font-size: 1.5rem;
       color: #17dbaa; }
     .about-info .job li {
-      font-family: "Exo 2";
+      font-family: "Encode Sans Semi Expanded", sans-serif;
       padding: 0.5rem; }
     .about-info .job p {
-      font-family: "Exo 2"; }
+      font-family: "Encode Sans Semi Expanded", sans-serif; }
   .about-info .job-1 {
     grid-area: job1; }
   .about-info .job-2 {
@@ -286,16 +277,7 @@ main {
     grid-area: job3; }
 
 #body-skills {
-  overflow-y: visible;
-  -webkit-animation: fadein 2s;
-  /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 2s;
-  /* Firefox < 16 */
-  -ms-animation: fadein 2s;
-  /* Internet Explorer */
-  -o-animation: fadein 2s;
-  /* Opera < 12.1 */
-  animation: fadein 2s; }
+  overflow-y: visible; }
 
 .language-header {
   margin-top: 5rem;
@@ -311,7 +293,7 @@ main {
   .languages .items {
     max-width: 10vw; }
   .languages img {
-    width: 120%; }
+    width: 100%; }
   .languages h1 {
     width: 100%;
     text-align: center; }
@@ -332,22 +314,13 @@ main {
   border-bottom: #17dbaa 5px solid;
   text-align: left; }
   .course-items ul {
-    font-family: "Exo 2";
+    font-family: "Encode Sans Semi Expanded", sans-serif;
     font-size: 1.5rem; }
     .course-items ul li {
       padding-bottom: 0.5rem; }
 
 #body-projects {
-  overflow-y: visible;
-  -webkit-animation: fadein 2s;
-  /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 2s;
-  /* Firefox < 16 */
-  -ms-animation: fadein 2s;
-  /* Internet Explorer */
-  -o-animation: fadein 2s;
-  /* Opera < 12.1 */
-  animation: fadein 2s; }
+  overflow-y: visible; }
 
 .projects {
   display: grid;
@@ -383,11 +356,11 @@ main {
   .dropdown-content p {
     margin-right: 2rem;
     margin-left: 2rem;
-    font-family: "Exo 2";
+    font-family: "Encode Sans Semi Expanded", sans-serif;
     font-size: 1.5rem; }
   .dropdown-content ul {
     text-indent: 1rem;
-    font-family: "Exo 2";
+    font-family: "Encode Sans Semi Expanded", sans-serif;
     font-size: 1.5rem;
     padding-left: 4rem; }
   .dropdown-content .img-container {
@@ -403,17 +376,6 @@ main {
       max-width: 20rem; }
       .dropdown-content .img-container img:hover {
         pointer-events: none; }
-
-#body-contact {
-  -webkit-animation: fadein 2s;
-  /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 2s;
-  /* Firefox < 16 */
-  -ms-animation: fadein 2s;
-  /* Internet Explorer */
-  -o-animation: fadein 2s;
-  /* Opera < 12.1 */
-  animation: fadein 2s; }
 
 .boxes {
   display: block;
@@ -595,7 +557,7 @@ main {
       display: flex;
       justify-content: space-between;
       max-width: 40vw; }
-      .languages .items img {
+      .languages .items ~ img {
         width: 30vw; }
       .languages .items h1 {
         padding-left: 2rem;

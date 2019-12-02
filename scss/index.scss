@@ -2,7 +2,10 @@
 @import 'menu';
 
 html {
-    background-image: radial-gradient(farthest-side at 50% 0%, $primary-color 90%, darken($secondary-color, 10) 500%);
+    // background-image: url('../img/dark-background.svg');
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('../img/dark-background.svg');
+    background-size: cover;
+	background-position: bottom;
     overflow: hidden;
     height: 100%;
 }
@@ -14,6 +17,11 @@ body {
     height: 100%;
     font-family: $font;
     line-height: 1.5;
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+    -ms-animation: fadein 2s; /* Internet Explorer */
+    -o-animation: fadein 2s; /* Opera < 12.1 */
+    animation: fadein 2s;
 }
 
 // headings
@@ -119,31 +127,16 @@ main {
 }
 
 .thin {
-    font-size: 4.5rem;
+    font-weight: bold;
 }
-
-
 
 .text-secondary {
     color: $secondary-color;
 }
 
-#body-index {
-    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 2s; /* Firefox < 16 */
-    -ms-animation: fadein 2s; /* Internet Explorer */
-    -o-animation: fadein 2s; /* Opera < 12.1 */
-    animation: fadein 2s;
-}
-
 // About Page.
 #body-about {
     overflow-y: visible;
-    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 2s; /* Firefox < 16 */
-    -ms-animation: fadein 2s; /* Internet Explorer */
-    -o-animation: fadein 2s; /* Opera < 12.1 */
-    animation: fadein 2s;
 }
 
 .about-info {
@@ -163,7 +156,7 @@ main {
     
     .bio {
         grid-area: bio;
-        font-size: 2.0rem;
+        font-size: 1.8rem;
 
         p {
             font-family: $font2;
@@ -212,11 +205,6 @@ main {
 // Skills Page
 #body-skills {
     overflow-y: visible;
-    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 2s; /* Firefox < 16 */
-    -ms-animation: fadein 2s; /* Internet Explorer */
-    -o-animation: fadein 2s; /* Opera < 12.1 */
-    animation: fadein 2s;
 }
 
 .language-header {
@@ -237,7 +225,7 @@ main {
     }
 
     img {
-        width: 120%;
+        width: 100%;
     }
 
     h1 {
@@ -277,11 +265,6 @@ main {
 // Project Page
 #body-projects {
     overflow-y: visible;
-    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 2s; /* Firefox < 16 */
-    -ms-animation: fadein 2s; /* Internet Explorer */
-    -o-animation: fadein 2s; /* Opera < 12.1 */
-    animation: fadein 2s;
 }
 
 .projects {
@@ -359,14 +342,6 @@ main {
 }
 
 // Contact Page
-#body-contact {
-    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 2s; /* Firefox < 16 */
-    -ms-animation: fadein 2s; /* Internet Explorer */
-    -o-animation: fadein 2s; /* Opera < 12.1 */
-    animation: fadein 2s;
-}
-
 .boxes {
     display: block;
     justify-content: space-evenly;
