@@ -118,7 +118,7 @@
   transition-delay: 0.6s; }
 
 html {
-  background-image: radial-gradient(farthest-side at 0% 0%, black 90%, #08513f 150%);
+  background-image: radial-gradient(farthest-side at 50% 0%, black 90%, #12ad86 500%);
   overflow: hidden;
   height: 100%; }
 
@@ -321,10 +321,6 @@ main {
   grid-template-columns: repeat(3, 1fr); }
   .projects img {
     width: 100%; }
-    .projects img:hover {
-      opacity: 0.5;
-      border-color: #17dbaa;
-      transition: all 0.5s ease-out; }
 
 .dropdown-content {
   grid-column: 1 / span 5;
@@ -354,11 +350,16 @@ main {
     margin-left: 2rem;
     font-family: "Exo 2";
     font-size: 1.5rem; }
+  .dropdown-content ul {
+    font-family: "Exo 2";
+    font-size: 1.5rem;
+    padding-left: 4rem; }
   .dropdown-content .img-container {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
-    justify-content: center; }
+    justify-content: center;
+    pointer-events: none; }
     .dropdown-content .img-container img {
       transition: all 0.5s ease-out;
       display: inline-block;
@@ -399,17 +400,18 @@ main {
   display: block;
   padding: 0.5rem 1rem;
   border: 0;
-  margin-bottom: 0.3rem;
+  margin-bottom: 1rem;
   font-size: 1.5rem;
   border-radius: 0;
   cursor: pointer;
   text-align: left;
-  width: 100%; }
+  width: 100%;
+  background: #1a1a1a;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.514); }
   .btn h2, .btn-dark h2, .btn-light h2 {
     display: inline; }
 
 .btn-dark {
-  background: black;
   color: white; }
   .btn-dark:hover {
     background: rgba(26, 26, 26, 0.5);
@@ -420,8 +422,7 @@ main {
     box-shadow: 0 0 10px #17dbaa; }
 
 .btn-light {
-  background: gray;
-  color: black; }
+  color: white; }
   .btn-light:hover {
     background: rgba(26, 26, 26, 0.5);
     color: #17dbaa; }
@@ -518,6 +519,8 @@ main {
     .projects #dropdown2 {
       grid-row-start: 3;
       grid-row-end: 4; }
+      .projects #dropdown2 ul {
+        padding-right: 2rem; }
     .projects #dropdown3 {
       grid-row-start: 4;
       grid-row-end: 5; }
@@ -559,4 +562,4 @@ main {
   #main-footer {
     font-size: 1.5rem;
     letter-spacing: 0.2rem;
-    padding: 0.8rem; } }
+    padding: 0.7rem; } }
