@@ -126,6 +126,14 @@ main {
     color: $secondary-color;
 }
 
+#body-index {
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+    -ms-animation: fadein 2s; /* Internet Explorer */
+    -o-animation: fadein 2s; /* Opera < 12.1 */
+    animation: fadein 2s;
+}
+
 // About Page.
 #body-about {
     overflow-y: visible;
@@ -273,6 +281,7 @@ main {
     display: none;
     position: relative;
     background-color: $primary-color;
+    opacity: 0.8;
     
     &.show {
         animation: fadein 1s;
@@ -416,11 +425,11 @@ main {
     letter-spacing: 0.5rem;
     position: sticky;
     text-align: center;
-    padding: 0.9rem;
-    margin: -1rem;
+    padding: 0.8rem;
+    margin: -2rem;
     background: darken($color: $primary-color, $amount: 10);
     color: set-text-colour($primary-color);
-    height: 31px;
+    height: 32px;
 }
 
 @import 'mobile';
