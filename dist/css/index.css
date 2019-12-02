@@ -546,8 +546,12 @@ main {
   .about-info {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
+    .about-info p {
+      padding-right: 3rem; }
     .about-info .bio-image {
       margin: 0; }
+    .about-info .bio {
+      font-size: 1.8rem; }
     .about-info .job {
       width: 100%;
       padding-left: 3rem;
@@ -598,6 +602,8 @@ main {
         text-align: left;
         min-width: 60%;
         align-self: center; }
+  .courses ul {
+    padding-right: 2rem; }
   .courses .course-items {
     margin: 0;
     padding-left: 4rem;

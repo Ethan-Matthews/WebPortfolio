@@ -113,8 +113,16 @@
         'job3';
         grid-template-columns: 1fr;
 
+        p {
+            padding-right: 3rem;
+        }
+
         .bio-image {
             margin: 0;
+        }
+
+        .bio {
+            font-size: 1.8rem;
         }
 
         .job {
@@ -122,6 +130,8 @@
             padding-left: 3rem;
             margin-bottom: -3rem;
             margin-left: -3rem;
+
+            
         }
     }
 
@@ -199,7 +209,9 @@
     }
 
     .courses{
-
+        ul {
+            padding-right: 2rem;
+        }
         .course-items {
             margin: 0;
             padding-left: 4rem;
